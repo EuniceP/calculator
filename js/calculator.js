@@ -27,28 +27,23 @@ window.onload = function () {
 			case '8':
 			case '9':
 			case '0':
-
+			case '.':
 				output.innerHTML += clickedvalue;
-				number += clickedvalue;
 				break;
 			case 'C':
 				self.clear();
 				break;	
 			case '=':
-				operand2 = number;
+				operand2 = output.innerHTML;
 				output.innerHTML = self.compute(operator, operand1, operand2);
 				break;
-
 			default: //operator pressed
 				operator = clickedvalue;
-				operand1 = number;
-				number = ''
+				operand1 = output.innerHTML;
 				output.innerHTML = '';
-				break;
-
-		}
+			}
 			
-		});
+			});
 	}
 
 	this.compute = function (operator,operand1,operand2) {
@@ -84,6 +79,4 @@ window.onload = function () {
 		number = '';
 		output.innerHTML = '';
 	}
-	
-
 }
