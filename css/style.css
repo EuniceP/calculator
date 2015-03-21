@@ -1,0 +1,58 @@
+
+div {
+	margin: 10px;
+	text-align:center;
+}
+h1 {
+	vertical-align:middle;
+}
+#container {
+	margin: 10px;
+	width: 480px;
+	height:480px;
+	border-color: black;
+	border-style: groove;
+}
+#reset {
+	float:left;
+	height:60px;
+	width: 90px;
+	vertical-align: middle;
+	border: 2px dashed;
+	border-color: black;
+	border-style: groove;
+	background-color: orange;
+	padding: 2px;
+	text-align: center;
+}
+#output {
+	float:left;
+	text-align: left;
+	margin-left: 10px;
+	height:60px;
+	width:290px;
+	border: 2px;
+	border-color: black;
+	border-style: groove;
+	background-color: white;
+	padding-left: 20px;
+	font-size:14px;	
+}
+.button {
+	
+	float:left;
+	height:60px;
+	width:90px;
+	padding: 0px 1px 1px 2px;
+}
+.operand {
+	border: 1px;
+	background-color: silver;
+}
+.operator {
+	border: 2px;
+	background-color: yellow;
+}
+.clearfloat {
+	clear:both;
+}
